@@ -362,9 +362,9 @@ canvas{
 .contact-drawer {
   position: fixed;
   bottom: 0;
-  right: 40px;
+  right:20px;
   left: auto;
-  width: 220px;
+  width:170px;
   margin-top: 0;
   background: rgba(3,3,3,0.97);
   border: 0.5px solid var(--border2);
@@ -408,7 +408,7 @@ canvas{
 }
 
 .contact-link {
-  padding: 13px 22px;
+  padding:12px 14px;
   font-size: 10px;
   font-family: var(--mono);
   color: var(--muted);
@@ -445,7 +445,7 @@ canvas{
 }
 
 .drawer-trigger {
-  padding: 15px 22px;
+  padding:12px 14px;
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 700;
@@ -620,3 +620,15 @@ footer{
 .footer-menu.open{opacity:1;visibility:visible;transform:none;}
 .footer-menu a{display:block;padding:12px 18px;color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:10px;}
 .footer-menu a:hover{color:var(--accent);background:rgba(255,255,255,.06);}
+
+
+@media (max-width:768px){
+  .contact-drawer{
+    width:160px;
+    right:10px;
+  }
+  .drawer-trigger,
+  .contact-link{
+    padding:10px 12px;
+  }
+}
