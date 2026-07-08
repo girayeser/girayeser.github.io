@@ -27,6 +27,8 @@
 .portfolio-description {
   padding-top: 60px;
   padding-bottom: 40px;
+  padding-left: var(--content-pad);
+  padding-right: var(--content-pad);
   border-top: 0.5px solid var(--border2);
 }
 
@@ -39,7 +41,6 @@
   font-size: 14px;
   line-height: 1.75;
   color: var(--muted);
-  max-width: 720px;
   margin-bottom: 18px;
 }
 
@@ -75,11 +76,11 @@
       <div class="stat-row">
         <div class="stat-card">
           <div class="stat-val" id="statCurrent"><div class="dots"><span></span><span></span><span></span></div></div>
-          <div class="stat-lbl">Current</div>
+          <div class="stat-lbl">Current ($)</div>
         </div>
         <div class="stat-card">
           <div class="stat-val" id="statStart"><div class="dots"><span></span><span></span><span></span></div></div>
-          <div class="stat-lbl">Start</div>
+          <div class="stat-lbl">Start ($)</div>
         </div>
         <div class="stat-card">
           <div class="stat-val" id="statChange"><div class="dots"><span></span><span></span><span></span></div></div>
@@ -104,7 +105,6 @@
           <canvas id="mainchart"></canvas>
           <div class="chart-tip" id="chartTip"></div>
         </div>
-        <div class="chart-note">Liquid Hedge Fund · future entries pending</div>
       </div>
     </div>
 
