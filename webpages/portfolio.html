@@ -13,7 +13,7 @@
 <style>
 /* PORTFOLIO HEADER */
 .portfolio-header {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 20px;
   margin-bottom: 0;
   border-bottom: 0.5px solid var(--border2);
@@ -21,6 +21,30 @@
 
 .workspace {
   padding-top: 40px;
+}
+
+/* PORTFOLIO DESCRIPTION — reuses existing tokens only */
+.portfolio-description {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-top: 0.5px solid var(--border2);
+}
+
+.portfolio-description .section-title {
+  margin-bottom: 24px;
+}
+
+.portfolio-body-text {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 720px;
+  margin-bottom: 18px;
+}
+
+.portfolio-body-text:last-child {
+  margin-bottom: 0;
 }
 </style>
 </head>
@@ -82,6 +106,16 @@
         </div>
         <div class="chart-note">Liquid Hedge Fund · future entries pending</div>
       </div>
+    </div>
+
+    <div class="portfolio-description reveal">
+      <div class="section-title">Building the Liquid Hedge Fund</div>
+      <p class="portfolio-body-text">The Liquid Hedge Fund project is built around a structured and increasingly automated workflow designed to support portfolio monitoring, historical performance tracking, and transparent reporting.</p>
+      <p class="portfolio-body-text">Data is collected from multiple market and financial sources using custom-built scripts and processing tools. Each update is recorded as part of a growing historical time-series database, allowing portfolio performance to be monitored and analyzed over time. Processed data is maintained under version control through GitHub and published directly to this website.</p>
+      <p class="portfolio-body-text">Currently, the project operates through two complementary workflows.</p>
+      <p class="portfolio-body-text">The primary workflow is based on Excel, local data storage, and GitHub deployment. After data is collected, automated formulas, macros, and validation checks are used to review calculations, identify anomalies, and ensure consistency before publication. While this process requires a limited amount of manual oversight during the day, the review effort remains minimal and provides an additional layer of quality control. As a result, this workflow offers a higher level of confidence in data accuracy, reporting integrity, and historical record keeping.</p>
+      <p class="portfolio-body-text">The secondary workflow leverages Google Apps Script and Google Sheets to automate data collection, processing, report generation, and distribution. Through scheduled triggers, reports can be created and delivered automatically without requiring ongoing user interaction. This approach significantly increases operational efficiency and scalability, although the reduced level of manual review may occasionally increase the likelihood of data-quality issues.</p>
+      <p class="portfolio-body-text">By combining these two approaches, the project seeks to balance automation, accuracy, and operational resilience. Development remains ongoing, with continued improvements focused on data validation, workflow automation, reporting capabilities, and the integration of additional financial data sources.</p>
     </div>
 
     <div class="contact-drawer" id="contactDrawer">
