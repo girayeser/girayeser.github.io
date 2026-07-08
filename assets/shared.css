@@ -519,6 +519,7 @@ footer{
 /* HOME PAGE */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,7 +563,7 @@ footer{
 
 /* PORTFOLIO PAGE */
 .portfolio-header {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
@@ -582,16 +583,14 @@ footer{
 @media(max-width:640px){
   nav{
     padding:12px 20px;
-    height:auto;
+    min-height:60px;
     flex-wrap:wrap;
     gap:10px;
   }
-  .nav-right{width:100%;justify-content:space-between;}
   .container{padding:0 20px;}
   .stat-row{gap:8px;}
   .stat-card{flex:1 1 calc(50% - 8px);min-width:0;}
   .chart-box {margin-bottom:96px;padding:16px;}
-  .hero {min-height:auto;padding:100px 0 80px;}
   .hero-title {margin-bottom:16px;}
   .hero-description {margin-bottom:32px;font-size:14px;}
   .contact-drawer{bottom:0;right:16px;left:auto;width:min(200px, calc(100vw - 32px));max-width:200px;}
