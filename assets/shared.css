@@ -586,7 +586,6 @@ footer{
     flex-wrap:wrap;
     gap:10px;
   }
-  .nav-right{width:100%;justify-content:space-between;}
   .container{padding:0 20px;}
   .stat-row{gap:8px;}
   .stat-card{flex:1 1 calc(50% - 8px);min-width:0;}
