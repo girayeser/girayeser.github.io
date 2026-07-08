@@ -590,7 +590,6 @@ footer{
   .stat-row{gap:8px;}
   .stat-card{flex:1 1 calc(50% - 8px);min-width:0;}
   .chart-box {margin-bottom:96px;padding:16px;}
-  .hero {min-height:auto;padding:100px 0 80px;}
   .hero-title {margin-bottom:16px;}
   .hero-description {margin-bottom:32px;font-size:14px;}
   .contact-drawer{bottom:0;right:16px;left:auto;width:min(200px, calc(100vw - 32px));max-width:200px;}
