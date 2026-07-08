@@ -519,6 +519,7 @@ footer{
 /* HOME PAGE */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,7 +563,7 @@ footer{
 
 /* PORTFOLIO PAGE */
 .portfolio-header {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
@@ -582,7 +583,7 @@ footer{
 @media(max-width:640px){
   nav{
     padding:12px 20px;
-    height:auto;
+    min-height:60px;
     flex-wrap:wrap;
     gap:10px;
   }
