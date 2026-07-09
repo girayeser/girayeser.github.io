@@ -88,14 +88,14 @@ nav{
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   right: 0;
   left: auto;
+  width: fit-content;
   background: var(--bg);
   border: none;
   border-radius: var(--radius);
-  margin-top: 8px;
-  min-width: 200px;
+  margin-top: 0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -124,6 +124,7 @@ nav{
   border: 0.5px solid transparent;
   border-radius: calc(var(--radius) - 4px);
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .dropdown-item:hover,
@@ -362,9 +363,9 @@ canvas{
 .contact-drawer {
   position: fixed;
   bottom: 0;
-  right:20px;
+  right: 40px;
   left: auto;
-  width:170px;
+  width: 220px;
   margin-top: 0;
   background: rgba(3,3,3,0.97);
   border: 0.5px solid var(--border2);
@@ -408,7 +409,7 @@ canvas{
 }
 
 .contact-link {
-  padding:12px 14px;
+  padding: 13px 22px;
   font-size: 10px;
   font-family: var(--mono);
   color: var(--muted);
@@ -445,7 +446,7 @@ canvas{
 }
 
 .drawer-trigger {
-  padding:12px 14px;
+  padding: 15px 22px;
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 700;
@@ -519,11 +520,12 @@ footer{
 
 /* HOME PAGE */
 .hero {
-  min-height: calc(100dvh - 72px);
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding-top: 60px;
   position: relative;
   z-index: 1;
 }
@@ -619,53 +621,3 @@ footer{
 .footer-menu.open{opacity:1;visibility:visible;transform:none;}
 .footer-menu a{display:block;padding:12px 18px;color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:10px;}
 .footer-menu a:hover{color:var(--accent);background:rgba(255,255,255,.06);}
-
-
-@media (max-width:768px){
-  .contact-drawer{
-    width:160px;
-    right:10px;
-  }
-  .drawer-trigger,
-  .contact-link{
-    padding:10px 12px;
-  }
-}
-
-
-@media(max-width:640px){
-  .hero{
-    min-height:calc(100svh - 72px);
-    padding:0;
-  }
-
-  .hero-content{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-
-  .contact-drawer{
-    width:auto;
-    min-width:140px;
-    max-width:160px;
-    right:12px;
-  }
-
-  .drawer-trigger{
-    width:auto;
-  }
-
-  .drawer-icon{
-    margin-left:8px;
-  }
-}
-
-
-/* Ensure identical dropdown spacing on all pages/devices */
-.workspace-dropdown .dropdown-menu{
-  top:calc(100% + 10px);
-  margin-top:0 !important;
-  z-index:1000;
-}
