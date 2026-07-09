@@ -648,3 +648,46 @@ footer{
   border:none;
   padding-left:0;
 }
+
+
+/* Final dropdown alignment fix */
+.dropdown-menu{
+  top: calc(100% + 2px) !important;
+  background: var(--bg) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45) !important;
+  overflow: hidden !important;
+}
+
+.dropdown-item{
+  padding: 10px 14px !important;
+  text-align: center !important;
+}
+
+/* Keep contacts compact on all devices */
+.contact-drawer{
+  width: fit-content !important;
+  min-width: unset !important;
+  max-width: fit-content !important;
+}
+
+.contact-list{
+  width: fit-content !important;
+}
+
+.drawer-trigger{
+  width: fit-content !important;
+  padding: 12px 14px !important;
+}
+
+.contact-link{
+  padding: 12px 14px !important;
+}
+
+@media(max-width:640px){
+  .contact-drawer{
+    width: fit-content !important;
+    min-width: unset !important;
+    max-width: fit-content !important;
+  }
+}
