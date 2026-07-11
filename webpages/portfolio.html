@@ -255,9 +255,24 @@ function sanitizeAndLoad(text) {
 
   const json = JSON.parse(normalized);
   const raw  = Array.isArray(json) ? json : (json.portfolio || json.data || []);
-  return raw.filter(d =>
-    d && d.date && d.value !== null && d.value !== undefined && d.value !== '' && !isNaN(Number(d.value))
-  ).map(d => ({ date: d.date, value: Number(d.value) }));
+
+  const today = new Date();
+  today.setHours(23, 59, 59, 999);
+
+  return raw
+    .filter(d =>
+      d &&
+      d.date &&
+      d.value !== null &&
+      d.value !== undefined &&
+      d.value !== '' &&
+      !isNaN(Number(d.value)) &&
+      new Date(d.date) <= today
+    )
+    .map(d => ({
+      date: d.date,
+      value: Number(d.value)
+    }));
 }
 
 function onDataLoaded(data) {
